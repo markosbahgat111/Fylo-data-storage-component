@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/bg-desktop.png') no-repeat;
+    background-size: 100vw 50vh;
+    background-position: bottom right;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    margin-top: -50px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+}
+.app_container{
+    width: 600px;
+    height: 150px;
+    position: relative;
+    background-color:hsl(228, 56%, 26%) ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2em;
+}
+.app_container h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: lighter;
+    word-spacing: 1px;
+
+    
+    
+}
+.app_container h1 strong {
+    color: rgb(255, 255, 255);
+}
+.fylo_container{
+    width: 300px;
+    height: 180px;
+    background-color:hsl(228, 56%, 26%) ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-top-right-radius: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20PX;
+}
+.icons_container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 90%;
+    gap: 10px;
+
+}
+.icons_container img{
+    padding: 0.5em;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+progress {
+    border-radius: 11px;
+    width: 90%;
+    height: 15px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    box-sizing: border-box;
+    margin:0 auto;
+    position: relative;
+}
+  progress::-webkit-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 11px;
+    padding: 1.5px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+  progress::-webkit-progress-value {
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+progress::-moz-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 11px;
+    padding: 1.5px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+.app_container .box{
+    position: absolute;
+    background-color: white;
+    right: 10%;
+    top: -50px;
+    padding: 1em 2em;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.app_container .box .triangle{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 00%, 100% 100%);
+    /* origin for clipping is top left */
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 64%, 10% 60%, 0% 100%); */
+}
+.app_container .spans_contianer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin:0 auto;
+    color: white;
+    font-weight: 700;
+    word-spacing: 1px;
+    text-align: left;
+}
+.app_container .box strong{
+    font-weight: 700;
+    font-size: 35px;
+}
+@media screen and (max-width:990px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background: url('./images/bg-mobile.png') no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom right;
+        background-color: hsl(229, 57%, 11%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_container{
+        margin-top:0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media screen and (max-width:630px){
+    .fylo_container{
+        width: 300px;
+        height: 180px;
+        background-color:hsl(228, 56%, 26%) ;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-top-right-radius: 50%;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 20PX;
+    }
+    .app_container{
+        width: 90%;
+        height: 200px;
+        position: relative;
+        background-color:hsl(228, 56%, 26%) ;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2em;
+    }
+    .app_container .box .triangle{
+        display: none;
+    }
+    .app_container .box{
+        position: absolute;
+        width:60%;
+        background-color: white;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        padding: 1em 0;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+    }
+    progress {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .app_container .spans_contianer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 auto;
+        color: white;
+        font-weight: 700;
+        word-spacing: 0;
+        text-align: center;
+        height: fit-content;
+    }
+}
